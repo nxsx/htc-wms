@@ -1,0 +1,10 @@
+SELECT ORDER_NO || '_' || MAT_CODE || '_' || WKPOS_CODE AS HCheck, 
+       total_hv_amt, 
+       total_mo_amt, 
+       mat_unit_code 
+FROM T_ORDER_DETAIL t --WHERE ORDER_NO='050004306815' AND MAT_CODE='0060304099N'
+WHERE --MAT_CODE='1434001002N' AND 
+ORDER_NO IN (
+'040000068938',
+'050004306815'
+)
